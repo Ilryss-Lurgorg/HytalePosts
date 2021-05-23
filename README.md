@@ -37,10 +37,13 @@ J'ai également créer une nouvelel Data class pour manipuler plus simplement ju
 
 ![alt text](https://github.com/Ilryss-Lurgorg/HytalePosts/blob/master/pictures/NewDataClassSharedPreferences.PNG)
 
-Comme vous pouvez le voir dans le code du ViewModel, je n'ai pas trouvé d'autres solutions qu'utiliser la methdo add qui demande à avoir un MutableLiveData. Ainsi cela impliquait de changer une grande partie de l'application pour peu de résultat. Même en stockant dans le cache le résultat de la requête HTTP/HTTPS, et sans connexion l'utilisateur ne pourrait voir que le titre et le texte s'il est possible de stocker autant de texte dans les sharedPreferences, qui à ce que j'ai compris, ne sont pas faite pour cela au départ mais pour des settings de l'application à sauvegarder.
+Comme vous pouvez le voir dans le code du ViewModel, je n'ai pas trouvé d'autres solutions qu'utiliser la methode add qui demande à avoir un MutableLiveData. Ainsi cela impliquait de changer une grande partie de l'application pour peu de résultat. Même en stockant dans le cache le résultat de la requête HTTP/HTTPS, et sans connexion l'utilisateur ne pourrait voir que le titre et le texte s'il est possible de stocker autant de texte dans les sharedPreferences, qui à ce que j'ai compris, ne sont pas faite pour cela au départ mais pour des settings de l'application à sauvegarder.
 
 Ainsi dans le projet que vosu retrouverez sur ce GitHub, je n'ai pas implenté les sharedPreferences qui n'aurait pas eu grande utilité, l'application aurait été sans image et certainement sans texte dans le détail des articles.
 
 ## Conclusion
 
 Ce projet contient une liste d'élément avec la possibilités de voir le détail de chaque élément. Pour cela il utilise une API Rest mais ne stocke pas en cache. De plus, elle utilsie l'architecture Singleton et MVVM et a été designé aux même couleurs que le site Hytale (https://hytale.com/)
+
+## Auteur
+Steve CHAUVREAU-MANAT 3A 31
