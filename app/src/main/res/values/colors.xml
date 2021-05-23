@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#0F9D58</color>
+    <color name="colorPrimaryDark">#0F9D58</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="Grey">#878585</color>
+    <color name="HytaleBackground">#15243A</color>
+    <color name="HytaleTitleText">#A0BACD</color>
+    <color name="HytaleText">#B7CEDD</color>
+    <color name="HytaleTitleListText">#D19F32</color>
+    <color name="HytaleHeadband">#203658</color>
 </resources>

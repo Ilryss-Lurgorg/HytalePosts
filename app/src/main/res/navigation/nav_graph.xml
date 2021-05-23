@@ -3,26 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/HytalePostListFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.hytaleposts.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/HytalePostListFragment"
+        android:name="com.example.hytaleposts.presentation.list.HytalePostListFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/fragment_hytale_post_list">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/navigateToHytalePostDetailFragment"
+            app:destination="@id/HytalePostDetailFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.hytaleposts.SecondFragment"
+        android:id="@+id/HytalePostDetailFragment"
+        android:name="com.example.hytaleposts.presentation.detail.HytalePostDetailFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_hytale_post_detail">
+
+        <argument
+            android:name="HytalePostSlug"
+            app:argType="string"
+            android:defaultValue="" />
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/navigateToHytalePostListFragment"
+            app:destination="@id/HytalePostListFragment" />
     </fragment>
 </navigation>
